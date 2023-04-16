@@ -109,3 +109,12 @@ source $ZSH/oh-my-zsh.sh
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+
+# Fix resize terminal issue
+# see https://github.com/romkatv/powerlevel10k#horrific-mess-when-resizing-terminal-window
+typeset -g POWERLEVEL9K_SHOW_RULER=false
+typeset -g POWERLEVEL9K_MULTILINE_FIRST_PROMPT_GAP_CHAR=' '
+typeset -g POWERLEVEL9K_MULTILINE_FIRST_PROMPT_SUFFIX=''
+typeset -g POWERLEVEL9K_MULTILINE_NEWLINE_PROMPT_SUFFIX=''
+typeset -g POWERLEVEL9K_MULTILINE_LAST_PROMPT_SUFFIX=''
+typeset -g POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=()
