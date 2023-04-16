@@ -67,3 +67,8 @@
   stripComponents = 2
   include = ["Icons/22x22/**"]
   refreshPeriod = "168h"
+[".local/bin/jq"]
+  type = "file"
+  url = "https://github.com/stedolan/jq/releases/latest/download/jq-linux64"
+  executable = true
+  refreshPeriod = "168h"
