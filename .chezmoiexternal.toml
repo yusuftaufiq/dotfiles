@@ -1,3 +1,7 @@
+[".local/share/gedit/styles/nord.xml"]
+  type = "file"
+  url = "https://raw.githubusercontent.com/nordtheme/gedit/develop/src/xml/nord.xml"
+  refreshPeriod = "168h"
 [".local/share/fonts/caskaydia-cove"]
   type = "archive"
   url = "https://github.com/ryanoasis/nerd-fonts/releases/latest/download/CascadiaCode.zip"
