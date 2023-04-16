@@ -19,3 +19,39 @@
   stripComponents = 1
   exclude = ["Nordic-darker-v40/gnome-shell/gnome-shell.css"]
   refreshPeriod = "168h"
+[".icons"]
+  type = "archive"
+  url = "https://github.com/PapirusDevelopmentTeam/papirus-icon-theme/archive/refs/heads/master.zip"
+  stripComponents = 1
+  include = ["*/Papirus/**"]
+  refreshPeriod = "168h"
+[".icons/Papirus/64x64/places"]
+  type = "archive"
+  url = "https://github.com/Adapta-Projects/Papirus-Nord/releases/latest/download/Papirus-Nord.tar.xz"
+  stripComponents = 2
+  include = ["Icons/64x64/**"]
+  refreshPeriod = "168h"
+[".icons/Papirus/48x48/places"]
+  type = "archive"
+  url = "https://github.com/Adapta-Projects/Papirus-Nord/releases/latest/download/Papirus-Nord.tar.xz"
+  stripComponents = 2
+  include = ["Icons/48x48/**"]
+  refreshPeriod = "168h"
+[".icons/Papirus/32x32/places"]
+  type = "archive"
+  url = "https://github.com/Adapta-Projects/Papirus-Nord/releases/latest/download/Papirus-Nord.tar.xz"
+  stripComponents = 2
+  include = ["Icons/32x32/**"]
+  refreshPeriod = "168h"
+[".icons/Papirus/24x24/places"]
+  type = "archive"
+  url = "https://github.com/Adapta-Projects/Papirus-Nord/releases/latest/download/Papirus-Nord.tar.xz"
+  stripComponents = 2
+  include = ["Icons/24x24/**"]
+  refreshPeriod = "168h"
+[".icons/Papirus/22x22/places"]
+  type = "archive"
+  url = "https://github.com/Adapta-Projects/Papirus-Nord/releases/latest/download/Papirus-Nord.tar.xz"
+  stripComponents = 2
+  include = ["Icons/22x22/**"]
+  refreshPeriod = "168h"
