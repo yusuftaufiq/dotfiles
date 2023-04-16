@@ -2585,14 +2585,14 @@
 }
 
 #dashtodockContainer.dashtodock #dash .dash-background {
-  background: #303030;
+  background-color: #2e3440;
 }
 
 #dashtodockContainer.dashtodock .progress-bar {
   /* Customization of the progress bar style, e.g.:
-        -progress-bar-background: rgba(0.8, 0.8, 0.8, 1);
-        -progress-bar-border: rgba(0.9, 0.9, 0.9, 1);
-      */
+      -progress-bar-background: rgba(0.8, 0.8, 0.8, 1);
+      -progress-bar-border: rgba(0.9, 0.9, 0.9, 1);
+    */
 }
 
 #dashtodockContainer.top #dash .placeholder,
@@ -2602,9 +2602,9 @@
 }
 
 /*
-   * This is applied to a dummy actor. Only the alpha value for the background and border color
-   * and the transition-duration are used
-   */
+ * This is applied to a dummy actor. Only the alpha value for the background and border color
+ * and the transition-duration are used
+ */
 #dashtodockContainer.dummy-opaque {
   background-color: rgba(0, 0, 0, 0.8);
   border-color: rgba(0, 0, 0, 0.4);
@@ -2612,9 +2612,9 @@
 }
 
 /*
-   * This is applied to a dummy actor. Only the alpha value for the background and border color
-   * and the transition-duration are used
-   */
+ * This is applied to a dummy actor. Only the alpha value for the background and border color
+ * and the transition-duration are used
+ */
 #dashtodockContainer.dummy-transparent {
   background-color: rgba(0, 0, 0, 0.2);
   border-color: rgba(0, 0, 0, 0.1);
