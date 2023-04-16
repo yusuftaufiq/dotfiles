@@ -4,6 +4,30 @@
   exact = true
   stripComponents = 1
   refreshPeriod = "168h"
+[".oh-my-zsh/custom/plugins/zsh-syntax-highlighting"]
+  type = "archive"
+  url = "https://github.com/zsh-users/zsh-syntax-highlighting/archive/refs/heads/master.zip"
+  exact = true
+  stripComponents = 1
+  refreshPeriod = "168h"
+[".oh-my-zsh/custom/plugins/zsh-autosuggestions"]
+  type = "archive"
+  url = "https://github.com/zsh-users/zsh-autosuggestions/archive/refs/heads/master.zip"
+  exact = true
+  stripComponents = 1
+  refreshPeriod = "168h"
+[".oh-my-zsh/custom/plugins/zsh-completions"]
+  type = "archive"
+  url = "https://github.com/zsh-users/zsh-completions/archive/refs/heads/master.zip"
+  exact = true
+  stripComponents = 1
+  refreshPeriod = "168h"
+[".oh-my-zsh/custom/plugins/zsh-history-substring-search"]
+  type = "archive"
+  url = "https://github.com/zsh-users/zsh-history-substring-search/archive/refs/heads/master.zip"
+  exact = true
+  stripComponents = 1
+  refreshPeriod = "168h"
 [".oh-my-zsh/custom/themes/powerlevel10k"]
   type = "archive"
   url = "https://github.com/romkatv/powerlevel10k/archive/refs/heads/master.zip"
