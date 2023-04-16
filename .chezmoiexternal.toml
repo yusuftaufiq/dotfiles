@@ -34,6 +34,12 @@
   exact = true
   stripComponents = 1
   refreshPeriod = "168h"
+[".tmux"]
+  type = "archive"
+  url = "https://github.com/gpakosz/.tmux/archive/refs/heads/master.zip"
+  exact = true
+  stripComponents = 1
+  refreshPeriod = "168h"
 [".local/share/gedit/styles/nord.xml"]
   type = "file"
   url = "https://raw.githubusercontent.com/nordtheme/gedit/develop/src/xml/nord.xml"
