@@ -28,6 +28,12 @@
   exact = true
   stripComponents = 1
   refreshPeriod = "168h"
+[".oh-my-zsh/custom/plugins/you-should-use"]
+  type = "archive"
+  url = "https://github.com/MichaelAquilina/zsh-you-should-use/archive/refs/heads/master.zip"
+  exact = true
+  stripComponents = 1
+  refreshPeriod = "168h"
 [".oh-my-zsh/custom/themes/powerlevel10k"]
   type = "archive"
   url = "https://github.com/romkatv/powerlevel10k/archive/refs/heads/master.zip"
