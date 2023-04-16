@@ -1,0 +1,6 @@
+[".themes/Nordic-darker-v40"]
+  type = "archive"
+  url = "https://github.com/EliverLara/Nordic/releases/latest/download/Nordic-darker-v40.tar.xz"
+  stripComponents = 1
+  exclude = ["Nordic-darker-v40/gnome-shell/gnome-shell.css"]
+  refreshPeriod = "168h"
