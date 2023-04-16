@@ -1,3 +1,18 @@
+[".local/share/fonts/caskaydia-cove"]
+  type = "archive"
+  url = "https://github.com/ryanoasis/nerd-fonts/releases/latest/download/CascadiaCode.zip"
+  exclude = ["*.md", "*Windows Compatible*", "LICENSE*"]
+  refreshPeriod = "168h"
+[".local/share/fonts/fura-mono"]
+  type = "archive"
+  url = "https://github.com/ryanoasis/nerd-fonts/releases/latest/download/FiraMono.zip"
+  exclude = ["*.md", "*Windows Compatible*", "LICENSE*"]
+  refreshPeriod = "168h"
+[".local/share/fonts/fira-sans"]
+  type = "archive"
+  url = "https://fonts.google.com/download?family=Fira%20Sans"
+  exclude = ["OFL.txt"]
+  refreshPeriod = "168h"
 [".themes/Nordic-darker-v40"]
   type = "archive"
   url = "https://github.com/EliverLara/Nordic/releases/latest/download/Nordic-darker-v40.tar.xz"
