@@ -19,6 +19,13 @@
   stripComponents = 1
   exclude = ["Nordic-darker-v40/gnome-shell/gnome-shell.css"]
   refreshPeriod = "168h"
+[".icons/Nordic-cursors"]
+  type = "archive"
+  url = "https://github.com/EliverLara/Nordic/archive/refs/heads/master.zip"
+  exact = true
+  stripComponents = 4
+  include = ["*/kde/cursors/Nordic-cursors/**"]
+  refreshPeriod = "168h"
 [".icons"]
   type = "archive"
   url = "https://github.com/PapirusDevelopmentTeam/papirus-icon-theme/archive/refs/heads/master.zip"
