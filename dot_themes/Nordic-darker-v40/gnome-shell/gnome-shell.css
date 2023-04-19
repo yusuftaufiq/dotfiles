@@ -987,6 +987,25 @@ StScrollBar StButton#hhandle:active {
   color: #eceff4;
   border-color: #eceff4;
 }
+#panel #panelCenter .panel-button {
+  background-color: transparent;
+  box-shadow: inset 0 0 0 5px #2e3440;
+  color: #eceff4;
+  border-radius: 10px;
+  border-color: #eceff4;
+  border-width: 2px;
+  margin-left: 1px;
+  margin-right: 1px;
+}
+#panel #panelCenter .panel-button:hover,
+#panel #panelCenter .panel-button:active,
+#panel #panelCenter .panel-button:overview,
+#panel #panelCenter .panel-button:focus,
+#panel #panelCenter .panel-button:checked {
+  box-shadow: inset 0 0 0 100px #eceff4;
+  color: #2e3440;
+  border-color: #2e3440;
+}
 #panel #panelRight .panel-button {
   box-shadow: inset 0 0 0 100px #bf616a;
   color: #eceff4;
