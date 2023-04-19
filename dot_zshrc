@@ -149,7 +149,7 @@ alias sail='[ -f sail ] && bash sail || bash vendor/bin/sail'
 
 source ~/.aliases/bash_aliases
 
-alias ls='lsd'
-alias history="history | fzf"
-alias efh="eval \$(history | sed 's/^[ 0-9]*//' | sed 's/ *sudo //')"
-alias sail='[ -f sail ] && bash sail || bash vendor/bin/sail'
+export PATH=$PATH:~/.local/bin
+export PATH=$PATH:~/go/bin
+export PATH=$PATH:~/.spicetify
+export PATH=$PATH:~/.config/composer/vendor/bin
