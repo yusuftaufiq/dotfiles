@@ -80,8 +80,19 @@
   type = "archive"
   url = "https://github.com/EliverLara/Nordic/releases/latest/download/Nordic-darker-v40.tar.xz"
   stripComponents = 1
-  exclude = ["Nordic-darker-v40/gnome-shell/gnome-shell.css"]
   refreshPeriod = "168h"
+[".themes/Nordic-persona-5/gnome-shell/assets"]
+  type = "archive"
+  url = "https://github.com/EliverLara/Nordic/releases/latest/download/Nordic-darker-v40.tar.xz"
+  stripComponents = 3
+  refreshPeriod = "168h"
+  include = ["Nordic-darker-v40/gnome-shell/assets/**"]
+[".themes/Nordic-persona-5-transparent-center-panel/gnome-shell/assets"]
+  type = "archive"
+  url = "https://github.com/EliverLara/Nordic/releases/latest/download/Nordic-darker-v40.tar.xz"
+  stripComponents = 3
+  refreshPeriod = "168h"
+  include = ["Nordic-darker-v40/gnome-shell/assets/**"]
 [".icons/Nordic-cursors"]
   type = "archive"
   url = "https://github.com/EliverLara/Nordic/archive/refs/heads/master.zip"
