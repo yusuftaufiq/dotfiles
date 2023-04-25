@@ -1,0 +1,3 @@
+[diff]
+    command = "delta"
+    args = ["{{ .Destination }}", "{{ .Target }}"]

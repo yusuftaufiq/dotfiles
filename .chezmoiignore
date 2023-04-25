@@ -1,5 +1,6 @@
 gnome/
-dot_config/VSCodium/User/
 dconf-save.sh
 toggle-lyricstify-panel.sh
 toggle-lyricstify-desktop.sh
+scripts
+firefox
