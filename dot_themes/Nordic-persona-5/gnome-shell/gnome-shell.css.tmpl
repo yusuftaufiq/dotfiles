@@ -1,0 +1,19 @@
+{{ $leftPanelPrimaryColor := "#eceff4" }}
+{{ $leftPanelSecondaryColor := "#2e3440" }}
+
+{{ $centerPanelPrimaryColor := "#2e3440" }}
+{{ $centerPanelSecondaryColor := "#eceff4" }}
+{{ $centerPanelIsTransparent := false }}
+
+{{ $rightPanelPrimaryColor := "#bf616a" }}
+{{ $rightPanelSecondaryColor := "#eceff4" }}
+{{ $rightPanelIsTransparent := true }}
+
+{{ $dockBackgroundColor := "#2e3440" }}
+{{ $dockBorderColor := "#eceff4" }}
+
+{{ $originalGnomeShellCss := output "scripts/get-gnome-shell-css.sh" }}
+{{ $modifiedPanelGnomeShellCss := includeTemplate ".themes/gnome-shell/gnome-shell.css.tmpl" (dict "leftPanelPrimaryColor" $leftPanelPrimaryColor "leftPanelSecondaryColor" $leftPanelSecondaryColor "centerPanelPrimaryColor" $centerPanelPrimaryColor "centerPanelSecondaryColor" $centerPanelSecondaryColor "centerPanelIsTransparent" $centerPanelIsTransparent "rightPanelPrimaryColor" $rightPanelPrimaryColor "rightPanelSecondaryColor" $rightPanelSecondaryColor "rightPanelIsTransparent" $rightPanelIsTransparent "dockBackgroundColor" $dockBackgroundColor "dockBorderColor" $dockBorderColor)}}
+
+{{ $originalGnomeShellCss }}
+{{ $modifiedPanelGnomeShellCss }}
