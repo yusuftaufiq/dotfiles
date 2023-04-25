@@ -145,6 +145,7 @@ typeset -g POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=()
 typeset -g POWERLEVEL9K_INSTANT_PROMPT=off
 neofetch --off
 
+alias c='codium'
 alias ls='lsd'
 alias cat='bat'
 alias sail='[ -f sail ] && bash sail || bash vendor/bin/sail'
@@ -156,3 +157,4 @@ export PATH=$PATH:~/.local/bin
 export PATH=$PATH:~/go/bin
 export PATH=$PATH:~/.spicetify
 export PATH=$PATH:~/.config/composer/vendor/bin
+export PATH=$PATH:/home/linuxbrew/.linuxbrew/lib/ruby/gems/3.2.0/bin
