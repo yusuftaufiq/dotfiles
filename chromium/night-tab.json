@@ -1,0 +1,1259 @@
+{
+  "nightTab": true,
+  "version": "7.3.0",
+  "state": {
+    "layout": {
+      "area": {
+        "header": {
+          "width": 80,
+          "justify": "center"
+        },
+        "bookmark": {
+          "width": 100,
+          "justify": "center"
+        }
+      },
+      "alignment": "center-center",
+      "order": "header-bookmark",
+      "direction": "horizontal",
+      "size": 100,
+      "width": 80,
+      "padding": 40,
+      "gutter": 20,
+      "breakpoint": "md",
+      "scrollbar": "auto",
+      "title": "",
+      "overscroll": false,
+      "favicon": ""
+    },
+    "header": {
+      "item": {
+        "justify": "right"
+      },
+      "greeting": {
+        "show": true,
+        "type": "good",
+        "custom": "",
+        "name": "",
+        "size": 100,
+        "newLine": false
+      },
+      "transitional": {
+        "show": false,
+        "type": "time-and-date",
+        "size": 100,
+        "newLine": false
+      },
+      "clock": {
+        "hour": {
+          "show": false,
+          "display": "number"
+        },
+        "minute": {
+          "show": false,
+          "display": "number"
+        },
+        "second": {
+          "show": false,
+          "display": "number"
+        },
+        "separator": {
+          "show": false,
+          "text": ""
+        },
+        "meridiem": {
+          "show": false
+        },
+        "hour24": {
+          "show": true
+        },
+        "size": 400,
+        "newLine": true
+      },
+      "date": {
+        "day": {
+          "show": false,
+          "display": "word",
+          "weekStart": "monday",
+          "length": "long"
+        },
+        "date": {
+          "show": false,
+          "display": "number",
+          "ordinal": false
+        },
+        "month": {
+          "show": false,
+          "display": "word",
+          "length": "short",
+          "ordinal": true
+        },
+        "year": {
+          "show": false,
+          "display": "number"
+        },
+        "separator": {
+          "show": true,
+          "text": ""
+        },
+        "format": "date-month",
+        "size": 100,
+        "newLine": true
+      },
+      "search": {
+        "show": true,
+        "width": {
+          "by": "auto",
+          "size": 30
+        },
+        "focus": false,
+        "engine": {
+          "selected": "google",
+          "custom": {
+            "name": "",
+            "url": "",
+            "queryName": ""
+          }
+        },
+        "text": {
+          "justify": "center"
+        },
+        "size": 100,
+        "newLine": false,
+        "newTab": false,
+        "string": "intro to reactive programming"
+      },
+      "order": [
+        "greeting",
+        "search"
+      ],
+      "edit": false
+    },
+    "bookmark": {
+      "size": 100,
+      "url": {
+        "show": true
+      },
+      "line": {
+        "show": false
+      },
+      "shadow": {
+        "show": false
+      },
+      "hoverScale": {
+        "show": false
+      },
+      "orientation": "bottom",
+      "style": "block",
+      "newTab": false,
+      "edit": false,
+      "add": false,
+      "show": true,
+      "item": {}
+    },
+    "group": {
+      "area": {
+        "justify": "left"
+      },
+      "name": {
+        "size": 100
+      },
+      "order": "header-body",
+      "edit": false,
+      "add": false,
+      "toolbar": {
+        "size": 100
+      }
+    },
+    "toolbar": {
+      "location": "corner",
+      "position": "top-left",
+      "size": 100,
+      "accent": {
+        "show": false
+      },
+      "add": {
+        "show": false
+      },
+      "edit": {
+        "show": false
+      },
+      "newLine": true
+    },
+    "theme": {
+      "color": {
+        "range": {
+          "primary": {
+            "h": 220,
+            "s": 16
+          }
+        },
+        "contrast": {
+          "start": 15,
+          "end": 50
+        },
+        "shades": 14
+      },
+      "accent": {
+        "hsl": {
+          "h": 218,
+          "s": 27,
+          "l": 94
+        },
+        "rgb": {
+          "r": 236,
+          "g": 239,
+          "b": 244
+        },
+        "random": {
+          "active": false,
+          "style": "any"
+        },
+        "cycle": {
+          "active": false,
+          "speed": 300,
+          "step": 10
+        }
+      },
+      "font": {
+        "display": {
+          "name": "Fira Sans",
+          "weight": 400,
+          "style": "normal"
+        },
+        "ui": {
+          "name": "Fira Sans",
+          "weight": 400,
+          "style": "normal"
+        }
+      },
+      "background": {
+        "type": "color",
+        "color": {
+          "hsl": {
+            "h": 220,
+            "s": 16,
+            "l": 22
+          },
+          "rgb": {
+            "r": 46,
+            "g": 52,
+            "b": 64
+          }
+        },
+        "gradient": {
+          "angle": 160,
+          "start": {
+            "hsl": {
+              "h": 206,
+              "s": 16,
+              "l": 40
+            },
+            "rgb": {
+              "r": 86,
+              "g": 104,
+              "b": 118
+            }
+          },
+          "end": {
+            "hsl": {
+              "h": 219,
+              "s": 28,
+              "l": 12
+            },
+            "rgb": {
+              "r": 22,
+              "g": 28,
+              "b": 39
+            }
+          }
+        },
+        "image": {
+          "url": "",
+          "blur": 0,
+          "grayscale": 0,
+          "scale": 100,
+          "accent": 0,
+          "opacity": 100,
+          "vignette": {
+            "opacity": 0,
+            "start": 90,
+            "end": 70
+          }
+        },
+        "video": {
+          "url": "",
+          "blur": 0,
+          "grayscale": 0,
+          "scale": 100,
+          "accent": 0,
+          "opacity": 100,
+          "vignette": {
+            "opacity": 0,
+            "start": 90,
+            "end": 70
+          }
+        }
+      },
+      "opacity": {
+        "general": 100
+      },
+      "layout": {
+        "color": {
+          "by": "theme",
+          "blur": 0,
+          "opacity": 10,
+          "hsl": {
+            "h": 0,
+            "s": 0,
+            "l": 0
+          },
+          "rgb": {
+            "r": 0,
+            "g": 0,
+            "b": 0
+          }
+        },
+        "divider": {
+          "size": 0
+        }
+      },
+      "header": {
+        "color": {
+          "by": "theme",
+          "opacity": 10,
+          "hsl": {
+            "h": 0,
+            "s": 0,
+            "l": 0
+          },
+          "rgb": {
+            "r": 0,
+            "g": 0,
+            "b": 0
+          }
+        },
+        "search": {
+          "opacity": 100
+        }
+      },
+      "bookmark": {
+        "color": {
+          "by": "theme",
+          "opacity": 10,
+          "hsl": {
+            "h": 0,
+            "s": 0,
+            "l": 0
+          },
+          "rgb": {
+            "r": 0,
+            "g": 0,
+            "b": 0
+          }
+        },
+        "item": {
+          "border": 0,
+          "opacity": 100
+        }
+      },
+      "group": {
+        "toolbar": {
+          "opacity": 100
+        }
+      },
+      "toolbar": {
+        "opacity": 100
+      },
+      "style": "dark",
+      "radius": 75,
+      "shadow": 100,
+      "shade": {
+        "opacity": 10,
+        "blur": 0
+      },
+      "custom": {
+        "all": [],
+        "edit": false
+      }
+    },
+    "search": false,
+    "modal": false,
+    "menu": true
+  },
+  "bookmark": [
+    {
+      "name": {
+        "text": "Cool stuff",
+        "show": false
+      },
+      "items": [
+        {
+          "url": "https://stackoverflow.com/",
+          "display": {
+            "alignment": "bottom-right",
+            "direction": "vertical",
+            "order": "visual-name",
+            "rotate": 0,
+            "translate": {
+              "x": 0,
+              "y": 0
+            },
+            "gutter": 25,
+            "name": {
+              "show": false,
+              "text": "awesomeSheet",
+              "size": 7
+            },
+            "visual": {
+              "show": true,
+              "type": "icon",
+              "size": 25,
+              "letter": {
+                "text": "AS"
+              },
+              "icon": {
+                "name": "stack-overflow",
+                "prefix": "fab",
+                "label": "Stack Overflow"
+              },
+              "image": {
+                "url": ""
+              },
+              "shadow": {
+                "size": 0
+              }
+            }
+          },
+          "accent": {
+            "by": "theme",
+            "hsl": {
+              "h": 0,
+              "s": 0,
+              "l": 0
+            },
+            "rgb": {
+              "r": 0,
+              "g": 0,
+              "b": 0
+            }
+          },
+          "color": {
+            "by": "theme",
+            "hsl": {
+              "h": 0,
+              "s": 0,
+              "l": 0
+            },
+            "rgb": {
+              "r": 0,
+              "g": 0,
+              "b": 0
+            },
+            "opacity": 100
+          },
+          "background": {
+            "show": false,
+            "type": "image",
+            "opacity": 100,
+            "image": {
+              "url": ""
+            },
+            "video": {
+              "url": ""
+            }
+          },
+          "border": 0,
+          "shape": {
+            "wide": false,
+            "tall": false
+          },
+          "timestamp": 1626297988913
+        },
+        {
+          "url": "https://news.ycombinator.com/",
+          "display": {
+            "alignment": "bottom-right",
+            "direction": "vertical",
+            "order": "visual-name",
+            "rotate": 0,
+            "translate": {
+              "x": 0,
+              "y": 0
+            },
+            "gutter": 25,
+            "name": {
+              "show": false,
+              "text": "Amazon",
+              "size": 7
+            },
+            "visual": {
+              "show": true,
+              "type": "icon",
+              "size": 25,
+              "letter": {
+                "text": "AZ"
+              },
+              "icon": {
+                "name": "hacker-news",
+                "prefix": "fab",
+                "label": "Hacker News"
+              },
+              "image": {
+                "url": ""
+              },
+              "shadow": {
+                "size": 0
+              }
+            }
+          },
+          "accent": {
+            "by": "theme",
+            "hsl": {
+              "h": 0,
+              "s": 0,
+              "l": 0
+            },
+            "rgb": {
+              "r": 0,
+              "g": 0,
+              "b": 0
+            }
+          },
+          "color": {
+            "by": "theme",
+            "hsl": {
+              "h": 0,
+              "s": 0,
+              "l": 0
+            },
+            "rgb": {
+              "r": 0,
+              "g": 0,
+              "b": 0
+            },
+            "opacity": 100
+          },
+          "background": {
+            "show": false,
+            "type": "image",
+            "opacity": 100,
+            "image": {
+              "url": ""
+            },
+            "video": {
+              "url": ""
+            }
+          },
+          "border": 0,
+          "shape": {
+            "wide": false,
+            "tall": false
+          },
+          "timestamp": 1626297999213
+        },
+        {
+          "url": "https://github.com/",
+          "display": {
+            "alignment": "bottom-right",
+            "direction": "vertical",
+            "order": "visual-name",
+            "rotate": 0,
+            "translate": {
+              "x": 0,
+              "y": 0
+            },
+            "gutter": 25,
+            "name": {
+              "show": true,
+              "text": "",
+              "size": 7
+            },
+            "visual": {
+              "show": true,
+              "type": "icon",
+              "size": 25,
+              "letter": {
+                "text": "R"
+              },
+              "icon": {
+                "name": "github",
+                "prefix": "fab",
+                "label": "GitHub"
+              },
+              "image": {
+                "url": ""
+              },
+              "shadow": {
+                "size": 0
+              }
+            }
+          },
+          "accent": {
+            "by": "theme",
+            "hsl": {
+              "h": 0,
+              "s": 0,
+              "l": 0
+            },
+            "rgb": {
+              "r": 0,
+              "g": 0,
+              "b": 0
+            }
+          },
+          "color": {
+            "by": "theme",
+            "hsl": {
+              "h": 0,
+              "s": 0,
+              "l": 0
+            },
+            "rgb": {
+              "r": 0,
+              "g": 0,
+              "b": 0
+            },
+            "opacity": 100
+          },
+          "background": {
+            "show": false,
+            "type": "image",
+            "opacity": 100,
+            "image": {
+              "url": ""
+            },
+            "video": {
+              "url": ""
+            }
+          },
+          "border": 0,
+          "shape": {
+            "wide": true,
+            "tall": false
+          },
+          "timestamp": 1626298017175
+        },
+        {
+          "url": "https://www.reddit.com/",
+          "display": {
+            "alignment": "bottom-right",
+            "direction": "vertical",
+            "order": "visual-name",
+            "rotate": 0,
+            "translate": {
+              "x": 0,
+              "y": 0
+            },
+            "gutter": 25,
+            "name": {
+              "show": false,
+              "text": "Netflix",
+              "size": 7
+            },
+            "visual": {
+              "show": true,
+              "type": "icon",
+              "size": 25,
+              "letter": {
+                "text": "L"
+              },
+              "icon": {
+                "name": "reddit",
+                "prefix": "fab",
+                "label": "reddit Logo"
+              },
+              "image": {
+                "url": ""
+              },
+              "shadow": {
+                "size": 0
+              }
+            }
+          },
+          "accent": {
+            "by": "theme",
+            "hsl": {
+              "h": 0,
+              "s": 0,
+              "l": 0
+            },
+            "rgb": {
+              "r": 0,
+              "g": 0,
+              "b": 0
+            }
+          },
+          "color": {
+            "by": "theme",
+            "hsl": {
+              "h": 0,
+              "s": 0,
+              "l": 0
+            },
+            "rgb": {
+              "r": 0,
+              "g": 0,
+              "b": 0
+            },
+            "opacity": 100
+          },
+          "background": {
+            "show": false,
+            "type": "image",
+            "opacity": 100,
+            "image": {
+              "url": ""
+            },
+            "video": {
+              "url": ""
+            }
+          },
+          "border": 0,
+          "shape": {
+            "wide": false,
+            "tall": true
+          },
+          "timestamp": 1626298022303
+        }
+      ],
+      "toolbar": {
+        "openAll": {
+          "show": false
+        },
+        "collapse": {
+          "show": true
+        }
+      },
+      "collapse": false
+    },
+    {
+      "name": {
+        "text": "",
+        "show": false
+      },
+      "collapse": true,
+      "toolbar": {
+        "size": 100,
+        "openAll": {
+          "show": false
+        },
+        "collapse": {
+          "show": true
+        }
+      },
+      "items": [
+        {
+          "url": "https://twitter.com/",
+          "display": {
+            "alignment": "bottom-right",
+            "direction": "vertical",
+            "order": "visual-name",
+            "rotate": 0,
+            "translate": {
+              "x": 0,
+              "y": 0
+            },
+            "gutter": 25,
+            "name": {
+              "show": true,
+              "text": "",
+              "size": 7
+            },
+            "visual": {
+              "show": true,
+              "type": "icon",
+              "size": 25,
+              "letter": {
+                "text": ""
+              },
+              "icon": {
+                "name": "twitter",
+                "prefix": "fab",
+                "label": "Twitter"
+              },
+              "image": {
+                "url": ""
+              },
+              "shadow": {
+                "size": 0
+              }
+            }
+          },
+          "accent": {
+            "by": "theme",
+            "hsl": {
+              "h": 0,
+              "s": 0,
+              "l": 0
+            },
+            "rgb": {
+              "r": 0,
+              "g": 0,
+              "b": 0
+            }
+          },
+          "color": {
+            "by": "theme",
+            "hsl": {
+              "h": 0,
+              "s": 0,
+              "l": 0
+            },
+            "rgb": {
+              "r": 0,
+              "g": 0,
+              "b": 0
+            },
+            "opacity": 100
+          },
+          "background": {
+            "show": false,
+            "type": "image",
+            "opacity": 100,
+            "image": {
+              "url": ""
+            },
+            "video": {
+              "url": ""
+            }
+          },
+          "border": 0,
+          "shape": {
+            "wide": false,
+            "tall": false
+          },
+          "timestamp": 1682229860255
+        },
+        {
+          "url": "https://www.youtube.com/",
+          "display": {
+            "alignment": "bottom-right",
+            "direction": "vertical",
+            "order": "visual-name",
+            "rotate": 0,
+            "translate": {
+              "x": 0,
+              "y": 0
+            },
+            "gutter": 25,
+            "name": {
+              "show": true,
+              "text": "",
+              "size": 7
+            },
+            "visual": {
+              "show": true,
+              "type": "icon",
+              "size": 25,
+              "letter": {
+                "text": ""
+              },
+              "icon": {
+                "name": "youtube",
+                "prefix": "fab",
+                "label": "YouTube"
+              },
+              "image": {
+                "url": ""
+              },
+              "shadow": {
+                "size": 0
+              }
+            }
+          },
+          "accent": {
+            "by": "theme",
+            "hsl": {
+              "h": 0,
+              "s": 0,
+              "l": 0
+            },
+            "rgb": {
+              "r": 0,
+              "g": 0,
+              "b": 0
+            }
+          },
+          "color": {
+            "by": "theme",
+            "hsl": {
+              "h": 0,
+              "s": 0,
+              "l": 0
+            },
+            "rgb": {
+              "r": 0,
+              "g": 0,
+              "b": 0
+            },
+            "opacity": 100
+          },
+          "background": {
+            "show": false,
+            "type": "image",
+            "opacity": 100,
+            "image": {
+              "url": ""
+            },
+            "video": {
+              "url": ""
+            }
+          },
+          "border": 0,
+          "shape": {
+            "wide": false,
+            "tall": false
+          },
+          "timestamp": 1682229910902
+        },
+        {
+          "url": "https://www.facebook.com/",
+          "display": {
+            "alignment": "bottom-right",
+            "direction": "vertical",
+            "order": "visual-name",
+            "rotate": 0,
+            "translate": {
+              "x": 0,
+              "y": 0
+            },
+            "gutter": 25,
+            "name": {
+              "show": true,
+              "text": "",
+              "size": 7
+            },
+            "visual": {
+              "show": true,
+              "type": "icon",
+              "size": 25,
+              "letter": {
+                "text": ""
+              },
+              "icon": {
+                "name": "facebook",
+                "prefix": "fab",
+                "label": "Facebook"
+              },
+              "image": {
+                "url": ""
+              },
+              "shadow": {
+                "size": 0
+              }
+            }
+          },
+          "accent": {
+            "by": "theme",
+            "hsl": {
+              "h": 0,
+              "s": 0,
+              "l": 0
+            },
+            "rgb": {
+              "r": 0,
+              "g": 0,
+              "b": 0
+            }
+          },
+          "color": {
+            "by": "theme",
+            "hsl": {
+              "h": 0,
+              "s": 0,
+              "l": 0
+            },
+            "rgb": {
+              "r": 0,
+              "g": 0,
+              "b": 0
+            },
+            "opacity": 100
+          },
+          "background": {
+            "show": false,
+            "type": "image",
+            "opacity": 100,
+            "image": {
+              "url": ""
+            },
+            "video": {
+              "url": ""
+            }
+          },
+          "border": 0,
+          "shape": {
+            "wide": false,
+            "tall": false
+          },
+          "timestamp": 1682229950565
+        }
+      ]
+    },
+    {
+      "name": {
+        "text": "",
+        "show": false
+      },
+      "collapse": true,
+      "toolbar": {
+        "size": 100,
+        "openAll": {
+          "show": false
+        },
+        "collapse": {
+          "show": true
+        }
+      },
+      "items": [
+        {
+          "url": "https://mail.google.com/",
+          "display": {
+            "alignment": "bottom-right",
+            "direction": "vertical",
+            "order": "visual-name",
+            "rotate": 0,
+            "translate": {
+              "x": 0,
+              "y": 0
+            },
+            "gutter": 25,
+            "name": {
+              "show": true,
+              "text": "",
+              "size": 7
+            },
+            "visual": {
+              "show": true,
+              "type": "icon",
+              "size": 25,
+              "letter": {
+                "text": ""
+              },
+              "icon": {
+                "name": "envelope",
+                "prefix": "fas",
+                "label": "Envelope"
+              },
+              "image": {
+                "url": ""
+              },
+              "shadow": {
+                "size": 0
+              }
+            }
+          },
+          "accent": {
+            "by": "theme",
+            "hsl": {
+              "h": 0,
+              "s": 0,
+              "l": 0
+            },
+            "rgb": {
+              "r": 0,
+              "g": 0,
+              "b": 0
+            }
+          },
+          "color": {
+            "by": "theme",
+            "hsl": {
+              "h": 0,
+              "s": 0,
+              "l": 0
+            },
+            "rgb": {
+              "r": 0,
+              "g": 0,
+              "b": 0
+            },
+            "opacity": 100
+          },
+          "background": {
+            "show": false,
+            "type": "image",
+            "opacity": 100,
+            "image": {
+              "url": ""
+            },
+            "video": {
+              "url": ""
+            }
+          },
+          "border": 0,
+          "shape": {
+            "wide": false,
+            "tall": false
+          },
+          "timestamp": 1682230048581
+        },
+        {
+          "url": "https://web.whatsapp.com/",
+          "display": {
+            "alignment": "bottom-right",
+            "direction": "vertical",
+            "order": "visual-name",
+            "rotate": 0,
+            "translate": {
+              "x": 0,
+              "y": 0
+            },
+            "gutter": 25,
+            "name": {
+              "show": true,
+              "text": "",
+              "size": 7
+            },
+            "visual": {
+              "show": true,
+              "type": "icon",
+              "size": 25,
+              "letter": {
+                "text": ""
+              },
+              "icon": {
+                "name": "whatsapp",
+                "prefix": "fab",
+                "label": "What's App"
+              },
+              "image": {
+                "url": ""
+              },
+              "shadow": {
+                "size": 0
+              }
+            }
+          },
+          "accent": {
+            "by": "theme",
+            "hsl": {
+              "h": 0,
+              "s": 0,
+              "l": 0
+            },
+            "rgb": {
+              "r": 0,
+              "g": 0,
+              "b": 0
+            }
+          },
+          "color": {
+            "by": "theme",
+            "hsl": {
+              "h": 0,
+              "s": 0,
+              "l": 0
+            },
+            "rgb": {
+              "r": 0,
+              "g": 0,
+              "b": 0
+            },
+            "opacity": 100
+          },
+          "background": {
+            "show": false,
+            "type": "image",
+            "opacity": 100,
+            "image": {
+              "url": ""
+            },
+            "video": {
+              "url": ""
+            }
+          },
+          "border": 0,
+          "shape": {
+            "wide": false,
+            "tall": false
+          },
+          "timestamp": 1682230074885
+        },
+        {
+          "url": "https://linkedin.com/",
+          "display": {
+            "alignment": "bottom-right",
+            "direction": "vertical",
+            "order": "visual-name",
+            "rotate": 0,
+            "translate": {
+              "x": 0,
+              "y": 0
+            },
+            "gutter": 25,
+            "name": {
+              "show": true,
+              "text": "",
+              "size": 7
+            },
+            "visual": {
+              "show": true,
+              "type": "icon",
+              "size": 25,
+              "letter": {
+                "text": ""
+              },
+              "icon": {
+                "name": "linkedin",
+                "prefix": "fab",
+                "label": "LinkedIn"
+              },
+              "image": {
+                "url": ""
+              },
+              "shadow": {
+                "size": 0
+              }
+            }
+          },
+          "accent": {
+            "by": "theme",
+            "hsl": {
+              "h": 0,
+              "s": 0,
+              "l": 0
+            },
+            "rgb": {
+              "r": 0,
+              "g": 0,
+              "b": 0
+            }
+          },
+          "color": {
+            "by": "theme",
+            "hsl": {
+              "h": 0,
+              "s": 0,
+              "l": 0
+            },
+            "rgb": {
+              "r": 0,
+              "g": 0,
+              "b": 0
+            },
+            "opacity": 100
+          },
+          "background": {
+            "show": false,
+            "type": "image",
+            "opacity": 100,
+            "image": {
+              "url": ""
+            },
+            "video": {
+              "url": ""
+            }
+          },
+          "border": 0,
+          "shape": {
+            "wide": false,
+            "tall": false
+          },
+          "timestamp": 1682230273652
+        }
+      ]
+    }
+  ]
+}
