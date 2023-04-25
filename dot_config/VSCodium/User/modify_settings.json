@@ -1,0 +1,4 @@
+{{- /* chezmoi:modify-template */ -}}
+{{ $baseVSCodiumSettings := includeTemplate ".config/VSCodium/User/settings.json" }}
+{{ $mergeJsonOperator := printf ". + %s" $baseVSCodiumSettings }}
+{{ fromJsonc .chezmoi.stdin | jq $mergeJsonOperator | first | toPrettyJson }}
