@@ -97,7 +97,7 @@ plugins=(
 )
 
 fpath+=${ZSH_CUSTOM:-${ZSH:-~/.oh-my-zsh}/custom}/plugins/zsh-completions/src
-fpath=(~/.completions $fpath)
+fpath=(~/.config/zsh/completions $fpath)
 
 source $ZSH/oh-my-zsh.sh
 
