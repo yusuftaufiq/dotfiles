@@ -12,7 +12,10 @@ sudo apt install \
   conky \
   git \
   fzf \
-  jq
+  bat \
+  fd-find
+
+cd ~
 
 wget https://github.com/lsd-rs/lsd/releases/download/0.23.1/lsd_0.23.1_amd64.deb
 sudo dpkg -i lsd_0.23.1_amd64.deb
