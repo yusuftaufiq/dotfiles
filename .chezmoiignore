@@ -1,6 +1,3 @@
-gnome/
-dconf-save.sh
-toggle-lyricstify-panel.sh
-toggle-lyricstify-desktop.sh
+gnome
 scripts
 firefox
