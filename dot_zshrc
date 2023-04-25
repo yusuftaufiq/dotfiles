@@ -147,7 +147,7 @@ alias ls='lsd'
 alias efh="eval \$(history | fzf | sed 's/^[ 0-9]*//' | sed 's/ *sudo //')" # eval fuzzy history, run a command after selecting history
 alias sail='[ -f sail ] && bash sail || bash vendor/bin/sail'
 
-source ~/.aliases/bash_aliases
+source ~/.config/aliases/bash_aliases
 
 export PATH=$PATH:~/.local/bin
 export PATH=$PATH:~/go/bin

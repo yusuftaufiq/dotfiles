@@ -46,7 +46,7 @@
   exact = true
   stripComponents = 1
   refreshPeriod = "168h"
-[".aliases"]
+[".config/aliases"]
   type = "archive"
   url = "https://github.com/algotech/dotaliases/archive/refs/heads/master.zip"
   exact = true
