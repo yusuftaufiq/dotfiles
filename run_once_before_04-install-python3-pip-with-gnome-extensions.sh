@@ -15,3 +15,4 @@ gext install dash-to-dock-cosmic-@halfmexicanhalfamazing@gmail.com
 gext install compiz-alike-magic-lamp-effect@hermes83.github.com
 gext install Move_Clock@rmy.pobox.com
 gext install executor@raujonas.github.io
+gext install arcmenu@arcmenu.com
