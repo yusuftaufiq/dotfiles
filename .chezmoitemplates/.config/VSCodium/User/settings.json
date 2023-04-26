@@ -7,5 +7,7 @@
   "terminal.integrated.fontFamily": "FuraMono NF, monospace",
   "workbench.colorTheme": "Nord",
   "workbench.iconTheme": "Monokai Classic Monochrome Icons",
-  "workbench.productIconTheme": "material-product-icons"
+  "workbench.productIconTheme": "material-product-icons",
+  "window.menuBarVisibility": "toggle",
+  "workbench.activityBar.visible": false
 }
