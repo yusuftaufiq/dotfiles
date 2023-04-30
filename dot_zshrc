@@ -97,6 +97,15 @@ plugins=(
   fzf
   fzf-tab
   forgit
+  aliases
+  brew
+  composer
+  command-not-found
+  common-aliases
+  copybuffer
+  dotenv
+  history
+  ubuntu
 )
 
 fpath+=${ZSH_CUSTOM:-${ZSH:-~/.oh-my-zsh}/custom}/plugins/zsh-completions/src
@@ -151,7 +160,6 @@ alias ls='lsd'
 alias cat='bat'
 alias sail='[ -f sail ] && bash sail || bash vendor/bin/sail'
 
-source ~/.config/aliases/bash_aliases
 source ~/.config/fzf/fzf
 
 export PATH=$PATH:~/.local/bin
