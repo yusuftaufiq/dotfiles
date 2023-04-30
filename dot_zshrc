@@ -96,6 +96,7 @@ plugins=(
   you-should-use
   fzf
   fzf-tab
+  forgit
 )
 
 fpath+=${ZSH_CUSTOM:-${ZSH:-~/.oh-my-zsh}/custom}/plugins/zsh-completions/src
