@@ -9,5 +9,6 @@
   "workbench.iconTheme": "Monokai Classic Monochrome Icons",
   "workbench.productIconTheme": "material-product-icons",
   "window.menuBarVisibility": "toggle",
-  "workbench.activityBar.visible": false
+  "workbench.activityBar.visible": false,
+  "workbench.startupEditor": "none"
 }
