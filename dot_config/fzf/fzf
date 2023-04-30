@@ -23,6 +23,9 @@ export FZF_DEFAULT_OPTS='
   --color pointer:#BF616A,info:#4C566A,spinner:#4C566A,header:#4C566A,prompt:#81A1C1,marker:#EBCB8B
   --border
   --inline-info
-  --height 40%
   --color header:italic
+  --exact
+  --cycle
+  --reverse
+  --height '80%'
 '
