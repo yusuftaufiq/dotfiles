@@ -26,7 +26,7 @@ end
 
 function conky_main()
     local font = "Earwig Factory"
-    local rotation_angle = -65
+    local rotation_angle = -35
     local day_of_week_font_size = 52.0
     local full_date_font_size = 84.0
     local snow_storm = { 0.93, 0.94, 0.96 }
@@ -52,24 +52,24 @@ function conky_main()
     conky_show_text(
         cr,
         os.date("%A"), -- text
-        -250.0,        -- char_x
-        300.0,         -- char_y
+        -150.0,        -- char_x
+        250.0,         -- char_y
         snow_storm,    -- default_color
         {
-            [4] = polar_night
-        }
+            [4] = aurora_red
+        } -- colors map, meaning that the character in the 4th position will use the color aurora red
     )
 
     cairo_set_font_size(cr, full_date_font_size);
     conky_show_text(
         cr,
         os.date("%d_%B"), -- text
-        -250.0,           -- char_x
-        370.0,            -- char_y
+        -150.0,           -- char_x
+        320.0,            -- char_y
         snow_storm,       -- default_color
         {
-            [3] = aurora_red,
-            [5] = polar_night
+            [3] = polar_night,
+            [5] = aurora_red
         }
     )
 
