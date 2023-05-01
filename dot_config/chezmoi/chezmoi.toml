@@ -1,3 +1,7 @@
 [diff]
     command = "delta"
     args = ["{{ .Destination }}", "{{ .Target }}"]
+
+[edit]
+    command = "codium"
+    args = ["--wait"]
