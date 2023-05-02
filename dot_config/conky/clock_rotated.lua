@@ -63,7 +63,7 @@ function conky_main()
     cairo_set_font_size(cr, full_date_font_size);
     conky_show_text(
         cr,
-        os.date("%d_%B"), -- text
+        os.date("%d.%B"), -- text
         -150.0,           -- char_x
         320.0,            -- char_y
         snow_storm,       -- default_color
