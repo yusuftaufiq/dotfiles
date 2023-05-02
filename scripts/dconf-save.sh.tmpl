@@ -25,6 +25,8 @@ configs=(
 )
 
 for config in "${configs[@]}"; do
-  mkdir -p "$(dirname "$config")"
-  dconf dump "/org/$config/" > "$config.ini"
+  path="{{ .chezmoi.sourceDir }}/${config}"
+
+  mkdir -p "$(dirname "$path")"
+  dconf dump "/org/$config/" > "$path.ini"
 done
