@@ -165,5 +165,6 @@ source ~/.config/fzf/fzf
 export PATH=$PATH:~/.local/bin
 export PATH=$PATH:~/go/bin
 export PATH=$PATH:~/.spicetify
+export PATH=$PATH:~/.npm-global/bin
 export PATH=$PATH:~/.config/composer/vendor/bin
 export PATH=$PATH:/home/linuxbrew/.linuxbrew/lib/ruby/gems/3.2.0/bin
