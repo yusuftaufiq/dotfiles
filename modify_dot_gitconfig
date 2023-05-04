@@ -1,4 +1,3 @@
 {{- /* chezmoi:modify-template */ -}}
-{{ $baseGitConfig := includeTemplate ".gitconfig" }}
-{{ $mergedGitConfig := output "scripts/merge-ini.sh" .chezmoi.stdin $baseGitConfig }}
-{{ $mergedGitConfig }}
+{{- $mergedGitConfig := output "scripts/merge-gitconfig.sh" .chezmoi.stdin -}}
+{{- $mergedGitConfig -}}
