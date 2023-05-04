@@ -1,0 +1,39 @@
+[delta "nordic"]
+    # Original author: https://github.com/AirOnSkin
+    # Modified from: https://github.com/dandavison/delta/blob/85e2f8e490498629a806af01b960e0510bff3973/themes.gitconfig#L300
+    dark = true
+    line-numbers = true
+    side-by-side = true
+    keep-plus-minus-markers = false
+    syntax-theme = Nord
+    file-style = "#81A1C1" bold
+    file-decoration-style = "#81A1C1" ul
+    file-added-label = [+]
+    file-copied-label = [==]
+    file-modified-label = [*]
+    file-removed-label = [-]
+    file-renamed-label = [->]
+    hunk-header-style = omit
+    line-numbers-left-format = " {nm:>3} │"
+    line-numbers-left-style = "#BF616A"
+    line-numbers-right-format = " {np:>3} │"
+    line-numbers-right-style = "#A3BE8C"
+    line-numbers-minus-style = "#BF616A" italic black
+    line-numbers-plus-style = "#A3BE8C" italic black
+    line-numbers-zero-style = "#81A1C1" italic
+    minus-style = bold "#BF616A"
+    minus-emph-style = bold "#202020" "#D08770"
+    minus-non-emph-style = bold
+    plus-style = bold "#A3BE8C"
+    plus-emph-style = bold "#202020" "#8FBCBB"
+    plus-non-emph-style = bold
+    zero-style = syntax
+    blame-code-style = syntax
+    blame-format = "{author:<18} ({commit:>9}) {timestamp:^16}"
+    blame-palette = "#2E3440" "#3B4252" "#434C5E" "#4C566A"
+    merge-conflict-begin-symbol = ~
+    merge-conflict-end-symbol = ~
+    merge-conflict-ours-diff-header-style = "#EBCB8B" bold
+    merge-conflict-ours-diff-header-decoration-style = "#81A1C1" box
+    merge-conflict-theirs-diff-header-style = "#EBCB8B" bold
+    merge-conflict-theirs-diff-header-decoration-style = "#81A1C1" box
