@@ -1,3 +1,59 @@
+{{- if eq .env.applyMode "appearance" -}}
+
+**
+
+!.chezmoiscripts/01-install-theme-related-packages.sh
+!.chezmoiscripts/00-generate-snowstorm-papirus-icons.sh
+!.chezmoiscripts/01-dconf-load.sh
+!.chezmoiscripts/02-activate-gnome-extensions.sh
+
+!.themes/**
+!.icons/**
+!.wallpapers/**
+!.config/cava/**
+!.config/conky/**
+!.config/tilda/**
+!.local/share/gedit/**
+!.local/share/fonts/**
+!.local/share/gnome-shell/extensions/**
+!.local/bin/toggle-1st-desktop-mode
+!.local/bin/toggle-2nd-desktop-mode
+
+{{- else if eq .env.applyMode "terminal" -}}
+
+**
+
+!.chezmoiscripts/00-install-terminal-packages.sh
+!.chezmoiscripts/03-change-default-shell-to-zsh.sh
+
+!.zshrc
+!.p10k.zsh
+!.tmux.conf
+!.tmux.conf.local
+!.gitconfig
+!.oh-my-zsh/**
+!.tmux/**
+!.local/share/fonts/**
+!.local/bin/bat
+!.local/bin/fd
+!.config/bat/**
+!.config/delta/**
+!.config/fzf/**
+!.config/lsd/**
+!.config/neofetch/**
+
+{{- else if eq .env.applyMode "vscodium" -}}
+
+**
+
+!.chezmoiscripts/02-install-vscodium-with-extensions.sh
+!.config/VSCodium/User/**
+
+{{- else if eq .env.applyMode "all" -}}
+
+assets
+browser
 gnome
 scripts
-firefox
+
+{{- end -}}
