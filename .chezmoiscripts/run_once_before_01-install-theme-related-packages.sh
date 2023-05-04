@@ -1,11 +1,26 @@
 #!/bin/bash
 
-if [ -x "$(which apt)" ]; then
+export PATH=$PATH:~/.local/bin
+
+if [ -x "$(which dpkg)" ] && [ -x "$(which apt)" ]; then
   sudo apt update
-  sudo apt install gnome-tweaks gnome-shell-extensions python3 python3-pip
+  sudo apt install \
+    cava \
+    conky \
+    conky-all \
+    libnotify-bin \
+    gnome-tweaks \
+    gnome-shell-extensions \
+    python3 \
+    python3-pip
+
+  curl -fsSL https://deb.nodesource.com/setup_19.x | sudo -E bash -
+  sudo apt install nodejs
 fi
 
-export PATH=$PATH:~/.local/bin
+if [ -x "$(which npm)" ]; then
+  npm install -g @lyricstify/lyricstify --prefix ~/.npm-global
+fi
 
 if [ -x "$(which pip3)" ]; then
   pip3 install --upgrade gnome-extensions-cli

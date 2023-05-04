@@ -9,14 +9,10 @@ if [ -x "$(which dpkg)" ] && [ -x "$(which apt)" ]; then
     zsh \
     tmux \
     tilda \
-    cava \
-    conky \
-    conky-all \
     git \
     fzf \
     bat \
-    fd-find \
-    libnotify-bin
+    fd-find
 
   cd ~
 
