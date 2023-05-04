@@ -13,7 +13,7 @@
   padding: 0px 0px;
 }
 #panel .panel-button {
-  box-shadow: inset 0 0 0 100px #eceff4;
+  box-shadow: inset 0 0 0 100px {{ .color.secondary }};
   border-radius: 10px;
   -natural-hpadding: 12px;
   -minimum-hpadding: 6px;
@@ -22,16 +22,16 @@
   transition-duration: 100ms;
 }
 #panel .panel-button:hover {
-  box-shadow: inset 0 0 0 100px #2e3440;
-  color: #eceff4;
+  box-shadow: inset 0 0 0 100px {{ .color.primary }};
+  color: {{ .color.secondary }};
 }
 #panel .panel-button:active,
 #panel .panel-button:overview,
 #panel .panel-button:focus,
 #panel .panel-button:checked {
-  box-shadow: inset 0 0 0 100px #2e3440;
-  color: #eceff4;
-  border-color: #eceff4;
+  box-shadow: inset 0 0 0 100px {{ .color.primary }};
+  color: {{ .color.secondary }};
+  border-color: {{ .color.secondary }};
 }
 #panel #panelLeft,
 #panel #panelCenter {
@@ -42,10 +42,10 @@
  * LEFT PANEL THEME
  */
 #panel #panelLeft .panel-button {
-  box-shadow: inset 0 0 0 100px {{ .leftPanelPrimaryColor }};
-  color: {{ .leftPanelSecondaryColor }};
+  box-shadow: inset 0 0 0 100px {{ .color.secondary }};
+  color: {{ .color.primary }};
   border-radius: 10px;
-  border-color: {{ .leftPanelSecondaryColor }};
+  border-color: {{ .color.primary }};
   border-width: 2px;
   margin-left: 1px;
   margin-right: 1px;
@@ -55,24 +55,24 @@
 #panel #panelLeft .panel-button:overview,
 #panel #panelLeft .panel-button:focus,
 #panel #panelLeft .panel-button:checked {
-  box-shadow: inset 0 0 0 100px {{ .leftPanelSecondaryColor }};
-  color: {{ .leftPanelPrimaryColor }};
-  border-color: {{ .leftPanelPrimaryColor }};
+  box-shadow: inset 0 0 0 100px {{ .color.primary }};
+  color: {{ .color.secondary }};
+  border-color: {{ .color.secondary }};
 }
 
 /**
  * CENTER PANEL THEME
  */
 #panel #panelCenter .panel-button {
-  {{ if eq .centerPanelIsTransparent true }}
+  {{ if eq .centerPanelIsTransparent true -}}
     background-color: transparent;
-    box-shadow: inset 0 0 0 5px {{ .centerPanelPrimaryColor }};
-  {{ else }}
-    box-shadow: inset 0 0 0 100px {{ .centerPanelPrimaryColor }};
-  {{ end }}
-  color: {{ .centerPanelSecondaryColor }};
+    box-shadow: inset 0 0 0 5px {{ .color.primary }};
+  {{ else -}}
+    box-shadow: inset 0 0 0 100px {{ .color.primary }};
+  {{ end -}}
+  color: {{ .color.secondary }};
   border-radius: 10px;
-  border-color: {{ .centerPanelSecondaryColor }};
+  border-color: {{ .color.secondary }};
   border-width: 2px;
   margin-left: 1px;
   margin-right: 1px;
@@ -82,41 +82,41 @@
 #panel #panelCenter .panel-button:overview,
 #panel #panelCenter .panel-button:focus,
 #panel #panelCenter .panel-button:checked {
-  box-shadow: inset 0 0 0 100px {{ .centerPanelSecondaryColor }};
-  color: {{ .centerPanelPrimaryColor }};
-  border-color: {{ .centerPanelPrimaryColor }};
+  box-shadow: inset 0 0 0 100px {{ .color.secondary }};
+  color: {{ .color.primary }};
+  border-color: {{ .color.primary }};
 }
 
 /**
  * RIGHT PANEL THEME
  */
 #panel #panelRight .panel-button {
-  box-shadow: inset 0 0 0 100px {{ .rightPanelPrimaryColor }};
-  color: {{ .rightPanelSecondaryColor }};
+  box-shadow: inset 0 0 0 100px {{ .color.tertiary }};
+  color: {{ .color.secondary }};
   border-radius: 10px;
-  border-color: {{ .rightPanelSecondaryColor }};
+  border-color: {{ .color.secondary }};
   border-width: 2px;
   margin-left: 1px;
   margin-right: 1px;
 }
 #panel #panelRight .panel-button:hover {
-  box-shadow: inset 0 0 0 100px {{ .rightPanelSecondaryColor }};
-  color: {{ .rightPanelPrimaryColor }};
-  border-color: {{ .rightPanelPrimaryColor }};
+  box-shadow: inset 0 0 0 100px {{ .color.secondary }};
+  color: {{ .color.tertiary }};
+  border-color: {{ .color.tertiary }};
 }
 #panel #panelRight .panel-button:active,
 #panel #panelRight .panel-button:overview,
 #panel #panelRight .panel-button:focus,
 #panel #panelRight .panel-button:checked {
-  box-shadow: inset 0 0 0 100px {{ .rightPanelSecondaryColor }};
-  color: {{ .rightPanelPrimaryColor }};
-  border-color: {{ .rightPanelPrimaryColor }};
+  box-shadow: inset 0 0 0 100px {{ .color.secondary }};
+  color: {{ .color.tertiary }};
+  border-color: {{ .color.tertiary }};
 }
 #panel .panel-button:hover.clock-display {
   box-shadow: none;
 }
 #panel .panel-button:hover.clock-display .clock {
-  box-shadow: inset 0 0 0 100px {{ .rightPanelSecondaryColor }};
+  box-shadow: inset 0 0 0 100px {{ .color.secondary }};
 }
 #panel .panel-button:active.clock-display,
 #panel .panel-button:overview.clock-display,
@@ -128,5 +128,5 @@
 #panel .panel-button:overview.clock-display .clock,
 #panel .panel-button:focus.clock-display .clock,
 #panel .panel-button:checked.clock-display .clock {
-  box-shadow: inset 0 0 0 100px {{ .rightPanelSecondaryColor }};
+  box-shadow: inset 0 0 0 100px {{ .color.secondary }};
 }
