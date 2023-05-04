@@ -34,8 +34,9 @@ else
   gnome-extensions enable executor@raujonas.github.io
 
   # Start conky
-  conky -c $USER_HOME_DIR/.config/conky/conky_rotated.conf &
+  conky -d -c $USER_HOME_DIR/.config/conky/conky_rotated.conf &
 
+  # Send desktop notification if notify-send is installed
   if [ -x "$(which notify-send)" ]; then
     notify-send "Morgana" "You switched to 2nd desktop mode\\!" --icon ~/.wallpapers/morgana_icon.png --expire-time=5000
   fi
