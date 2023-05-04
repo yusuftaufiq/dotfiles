@@ -10,13 +10,9 @@ export FZF_CTRL_T_OPTS="
   --bind 'ctrl-/:change-preview-window(down|hidden|)'"
 
 # CTRL-/ to toggle small preview window to see the full command
-# CTRL-Y to copy the command into clipboard using pbcopy
 export FZF_CTRL_R_OPTS="
   --preview 'echo {}' --preview-window up:3:hidden:wrap
   --bind 'ctrl-/:toggle-preview'"
-
-# Print tree structure in the preview window
-export FZF_ALT_C_OPTS="--preview 'tree -C {}'"
 
 export FZF_DEFAULT_OPTS='
   --color fg:#D8DEE9,bg:#2E3440,hl:#A3BE8C,fg+:#D8DEE9,bg+:#434C5E,hl+:#A3BE8C
