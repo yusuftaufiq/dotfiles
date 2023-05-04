@@ -1,3 +1,3 @@
 #!/bin/bash
 
-wget -qO- https://raw.githubusercontent.com/EliverLara/Nordic/master/gnome-shell/gnome-shell.css
+chezmoi cat ~/.themes/Nordic-darker-v40/gnome-shell/gnome-shell.css --no-pager --no-tty
