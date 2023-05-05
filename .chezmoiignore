@@ -1,6 +1,13 @@
 {{- if eq .env.applyMode "appearance" -}}
 
 **
+!.local/
+!.local/share/
+!.local/bin/
+!.config/
+
+# The following scripts, files, and folders will be applied and executed
+# when the .env.applyMode of .chezmoidata.toml is set to "appearance".
 
 !.chezmoiscripts/01-install-theme-related-packages.sh
 !.chezmoiscripts/00-generate-snowstorm-papirus-icons.sh
@@ -15,13 +22,19 @@
 !.config/tilda/**
 !.local/share/gedit/**
 !.local/share/fonts/**
-!.local/share/gnome-shell/extensions/**
+!.local/share/gnome-shell/**
 !.local/bin/toggle-1st-desktop-mode
 !.local/bin/toggle-2nd-desktop-mode
 
 {{- else if eq .env.applyMode "terminal" -}}
 
 **
+!.local/
+!.local/bin/
+!.config/
+
+# The following scripts, files, and folders will be applied and executed
+# when the .env.applyMode of .chezmoidata.toml is set to "terminal".
 
 !.chezmoiscripts/00-install-terminal-packages.sh
 !.chezmoiscripts/03-change-default-shell-to-zsh.sh
@@ -37,6 +50,7 @@
 !.local/bin/bat
 !.local/bin/fd
 !.config/bat/**
+!.config/chezmoi/**
 !.config/delta/**
 !.config/fzf/**
 !.config/lsd/**
@@ -45,15 +59,26 @@
 {{- else if eq .env.applyMode "vscodium" -}}
 
 **
+!.config/
+
+# The following scripts, files, and folders will be applied and executed
+# when the .env.applyMode of .chezmoidata.toml is set to "vscodium".
 
 !.chezmoiscripts/02-install-vscodium-with-extensions.sh
-!.config/VSCodium/User/**
+!.local/share/fonts/**
+!.config/VSCodium/**
 
 {{- else if eq .env.applyMode "all" -}}
+
+# All scripts, files, and folders in this chezmoi directory will be applied
+# when the .env.applyMode of .chezmoidata.toml is set to "all"
 
 assets
 browser
 gnome
 scripts
+temp
+LICENSE
+README.md
 
 {{- end -}}
