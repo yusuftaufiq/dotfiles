@@ -1,6 +1,7 @@
 {{- $centerPanelIsTransparent := false -}}
 
-{{- $originalGnomeShellCss := output "scripts/get-gnome-shell-css.sh" -}}
+{{- $scriptPath := printf "%s/scripts/get-gnome-shell-css.sh" .chezmoi.sourceDir -}}
+{{- $originalGnomeShellCss := output $scriptPath -}}
 {{- $modifiedPanelGnomeShellCss := includeTemplate ".themes/gnome-shell/gnome-shell.css.tmpl" (dict "centerPanelIsTransparent" $centerPanelIsTransparent "color" .color) -}}
 
 {{- $originalGnomeShellCss }}
