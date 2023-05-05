@@ -14,5 +14,5 @@ if [ -x "$(which apt)" ]; then
 
   curl -fsSL https://raw.githubusercontent.com/spicetify/spicetify-cli/master/install.sh | sh
 
-  spicetify apply
+  spicetify backup apply
 fi
