@@ -161,6 +161,7 @@ alias sail='[ -f sail ] && bash sail || bash vendor/bin/sail'
 
 source ~/.config/fzf/fzf
 
+export PATH=$PATH:~/bin
 export PATH=$PATH:~/.local/bin
 export PATH=$PATH:~/go/bin
 export PATH=$PATH:~/.spicetify
