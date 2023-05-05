@@ -1,3 +1,4 @@
 {{- /* chezmoi:modify-template */ -}}
-{{- $mergedGitConfig := output "scripts/merge-gitconfig.sh" .chezmoi.stdin -}}
+{{- $scriptPath := printf "%s/scripts/merge-gitconfig.sh" .chezmoi.sourceDir -}}
+{{- $mergedGitConfig := output $scriptPath .chezmoi.stdin -}}
 {{- $mergedGitConfig -}}
