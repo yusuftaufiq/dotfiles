@@ -2,7 +2,7 @@
 
 export PATH=$PATH:~/.local/bin
 
-if [ -x "$(which dpkg)" ] && [ -x "$(which apt)" ]; then
+if [ -x "$(which apt)" ]; then
   sudo apt update
   sudo apt install \
     cava \

@@ -1,6 +1,6 @@
 #!/bin/bash
 
-if [ -x "$(which dpkg)" ] && [ -x "$(which apt)" ]; then
+if [ -x "$(which apt)" ]; then
   sudo apt update
   sudo apt install \
     curl \
@@ -13,7 +13,9 @@ if [ -x "$(which dpkg)" ] && [ -x "$(which apt)" ]; then
     fzf \
     bat \
     fd-find
+fi
 
+if [ -x "$(which dpkg)" ]; then
   cd ~
 
   wget https://github.com/lsd-rs/lsd/releases/download/0.23.1/lsd_0.23.1_amd64.deb
