@@ -61,7 +61,7 @@
   refreshPeriod = "168h"
 {{- end }}
 
-{{ if or (eq .env.applyMode "appearance") (eq .env.applyMode "terminal") (eq .env.applyMode "all") -}}
+{{ if or (eq .env.applyMode "appearance") (eq .env.applyMode "terminal") (eq .env.applyMode "vscodium") (eq .env.applyMode "all") -}}
 [".local/share/fonts/caskaydia-cove"]
   type = "archive"
   url = "https://github.com/ryanoasis/nerd-fonts/releases/latest/download/CascadiaCode.zip"
