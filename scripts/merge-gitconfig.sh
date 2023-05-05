@@ -5,7 +5,7 @@ tempDir="$chezmoiSourceDir/temp"
 tempGitconfigFile="$tempDir/.gitconfig"
 baseGitconfigFile="$chezmoiSourceDir/.chezmoitemplates/.gitconfig"
 
-readarray -t configs < <(git config --file .chezmoitemplates/.gitconfig --list)
+readarray -t configs < <(git config --file "$baseGitconfigFile" --list)
 
 mkdir -p "$tempDir"
 cp <(echo "$1") "$tempGitconfigFile"
