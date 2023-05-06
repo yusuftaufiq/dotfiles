@@ -1,4 +1,8 @@
 {{ if or (eq .env.applyMode "terminal") (eq .env.applyMode "all") -}}
+
+# The following folders will be applied when the .env.applyMode
+# of .chezmoidata.toml is set to "terminal" or "all".
+
 [".oh-my-zsh"]
   type = "archive"
   url = "https://github.com/ohmyzsh/ohmyzsh/archive/refs/heads/master.zip"
@@ -62,6 +66,10 @@
 {{- end }}
 
 {{ if or (eq .env.applyMode "appearance") (eq .env.applyMode "terminal") (eq .env.applyMode "vscodium") (eq .env.applyMode "all") -}}
+
+# The following folders will be applied when the .env.applyMode
+# of .chezmoidata.toml is set to "appearance", "vscodium", "terminal" or "all".
+
 [".local/share/fonts/caskaydia-cove"]
   type = "archive"
   url = "https://github.com/ryanoasis/nerd-fonts/releases/latest/download/CascadiaCode.zip"
@@ -85,6 +93,10 @@
 {{- end }}
 
 {{ if or (eq .env.applyMode "appearance") (eq .env.applyMode "all") -}}
+
+# The following folders will be applied when the .env.applyMode
+# of .chezmoidata.toml is set to "appearance" or "all".
+
 [".local/share/gedit/styles/nord.xml"]
   type = "file"
   url = "https://raw.githubusercontent.com/nordtheme/gedit/develop/src/xml/nord.xml"
