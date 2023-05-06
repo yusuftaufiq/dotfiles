@@ -9,6 +9,12 @@
     <a href="https://www.nordtheme.com/">
       <img alt="Theme" src="https://img.shields.io/static/v1?label=theme&message=nord&labelColor=2E3440&color=ECEFF4&style=flat">
     </a>
+    <a href="https://github.com/yusuftaufiq/dotfiles">
+      <img alt="GitHub repo size" src="https://img.shields.io/github/repo-size/yusuftaufiq/dotfiles?labelColor=2E3440&color=BF616A">
+    </a>
+    <a href="https://github.com/yusuftaufiq/dotfiles/blob/main/README.md">
+      <img alt="License" src="https://img.shields.io/github/license/yusuftaufiq/dotfiles?labelColor=2E3440&color=ECEFF4&style=flat">
+    </a>
   </p>
 </div>
 
@@ -142,7 +148,7 @@
   cd ~ && sh -c "$(wget -qO- get.chezmoi.io)" -- init --apply yusuftaufiq
   ```
 
-  > :info: You must log out and log in again to take effect.
+  > :information_source: You must log out and log in again to take effect.
 
 ### Selective installation
 
@@ -156,10 +162,10 @@
 
   > :warning: To know which shell scripts will be executed and which files will be modified or replaced, you can look at [`.chezmoiignore`](./.chezmoiignore) and [`.chezmoiexternal.toml.tmpl`](./.chezmoiexternal.toml.tmpl)
 
-  > :info: `terminal` require zsh, tmux, fzf, bat, fd-find, neofetch, git. This will be installed automatically if you are using an Ubuntu or Debian-based distro.
+  > :information_source: `terminal` require zsh, tmux, fzf, bat, fd-find, neofetch, git. This will be installed automatically if you are using an Ubuntu or Debian-based distro.
   > You will also need to manually change your terminal font to use any Nerd Fonts.
 
-  > :info: `appearance` require GNOME Extensions [from this section](#whats-in-it), conky, conky-all, cava, lyricstify, tilda. This (except Pop Cosmic and Pop Shell) will be installed automatically if you are using an Ubuntu or Debian-based distro.
+  > :information_source: `appearance` require GNOME Extensions [from this section](#whats-in-it), conky, conky-all, cava, lyricstify, tilda. This (except Pop Cosmic and Pop Shell) will be installed automatically if you are using an Ubuntu or Debian-based distro.
 
 - Finally, apply with the following command:
 
@@ -167,9 +173,9 @@
   export PATH="$HOME/bin:$PATH" && chezmoi apply
   ```
 
-  > :info: If you only want to apply certain files and folders, you can also specify target files or directories like `chezmoi apply ~/.config ~/.wallpapers`.
+  > :information_source: If you only want to apply certain files and folders, you can also specify target files or directories like `chezmoi apply ~/.config ~/.wallpapers`.
 
-  > :info: You must log out and log in again to take effect.
+  > :information_source: You must log out and log in again to take effect.
 
 ### Miscellaneous installation
 
@@ -204,7 +210,7 @@
   tilda -g ~/.config/tilda/lyricstify_desktop
   ```
 
-  > :info: If you are encountering tilda apps that are not aligned correctly in your screen size, you can add `-C` options to configure position from the configuration wizard.
+  > :information_source: If you are encountering tilda apps that are not aligned correctly in your screen size, you can add `-C` options to configure position from the configuration wizard.
 
 - Switch between desktop mode:
   ```bash
@@ -221,7 +227,7 @@
   acs
   ```
 
-  > :info: For more usage information about `acs` you can go to the [following link](https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/aliases#usage)
+  > :information_source: For more usage information about `acs` you can go to the [following link](https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/aliases#usage)
 
 ## Keybindings
 
