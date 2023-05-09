@@ -143,6 +143,7 @@ source $ZSH/oh-my-zsh.sh
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+[[ ! -f ~/.p10k.zsh ]] || source ~/.config/fzf/fzf
 
 # Fix resize terminal issue
 # see https://github.com/romkatv/powerlevel10k#horrific-mess-when-resizing-terminal-window
@@ -161,8 +162,6 @@ alias c='codium'
 alias ls='lsd'
 alias cat='bat'
 alias sail='[ -f sail ] && bash sail || bash vendor/bin/sail'
-
-source ~/.config/fzf/fzf
 
 export PATH=$PATH:~/bin
 export PATH=$PATH:~/.local/bin
