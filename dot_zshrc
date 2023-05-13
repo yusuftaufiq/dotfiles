@@ -103,7 +103,6 @@ plugins=(
   command-not-found
   common-aliases
   copybuffer
-  dotenv
   history
   ubuntu
 )
@@ -173,3 +172,7 @@ export PATH=$PATH:~/.spicetify
 export PATH=$PATH:~/.npm-global/bin
 export PATH=$PATH:~/.config/composer/vendor/bin
 export PATH=$PATH:/home/linuxbrew/.linuxbrew/lib/ruby/gems/3.2.0/bin
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
