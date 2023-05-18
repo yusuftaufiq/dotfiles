@@ -1,6 +1,6 @@
 require 'cairo'
 
-function conky_show_text(cr, text, char_x, char_y, default_color, colors_map)
+function conky_show_text(cr, text, char_x, char_y, default_color, colors_map, spacing_map)
     local extents = cairo_text_extents_t:create()
 
     cairo_text_extents(cr, text, extents)
@@ -8,17 +8,19 @@ function conky_show_text(cr, text, char_x, char_y, default_color, colors_map)
     for i = 1, #text do
         if colors_map[i] ~= nil then
             cairo_set_source_rgb(cr, table.unpack(colors_map[i]))
-            cairo_move_to(cr, char_x, char_y)
-            cairo_show_text(cr, text:sub(i, i))
-            extents = cairo_text_extents_t:create()
-            cairo_text_extents(cr, text:sub(i, i), extents)
-            char_x = char_x + extents.width
         else
             cairo_set_source_rgb(cr, table.unpack(default_color))
-            cairo_move_to(cr, char_x, char_y)
-            cairo_show_text(cr, text:sub(i, i))
-            extents = cairo_text_extents_t:create()
-            cairo_text_extents(cr, text:sub(i, i), extents)
+        end
+
+        cairo_move_to(cr, char_x, char_y)
+        cairo_show_text(cr, text:sub(i, i))
+        extents = cairo_text_extents_t:create()
+        cairo_text_extents(cr, text:sub(i, i), extents)
+
+
+        if spacing_map[i] ~= nil then
+            char_x = char_x + extents.width + spacing_map[i]
+        else
             char_x = char_x + extents.width
         end
     end
@@ -57,19 +59,23 @@ function conky_main()
         snow_storm,    -- default_color
         {
             [4] = aurora_red
-        } -- colors map, meaning that the character in the 4th position will use the color aurora red
+        }, -- colors map, meaning that the character in the 4th position will use the color aurora red
+        {}
     )
 
     cairo_set_font_size(cr, full_date_font_size);
     conky_show_text(
         cr,
-        os.date("%d.%B"), -- text
+        os.date("%d %B"), -- text
         -150.0,           -- char_x
         320.0,            -- char_y
         snow_storm,       -- default_color
         {
             [3] = polar_night,
             [5] = aurora_red
+        },
+        {
+            [3] = 20
         }
     )
 
