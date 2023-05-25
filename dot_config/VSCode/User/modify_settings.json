@@ -1,8 +1,8 @@
 {{- /* chezmoi:modify-template */ -}}
-{{- $baseVSCodiumSettings := includeTemplate ".config/VSCode/User/settings.json" -}}
-{{- $mergeJsonOperator := printf ". + %s" $baseVSCodiumSettings -}}
+{{- $baseVSCodeSettings := includeTemplate ".config/VSCode/User/settings.json" -}}
+{{- $mergeJsonOperator := printf ". + %s" $baseVSCodeSettings -}}
 {{- if not (eq .chezmoi.stdin "") -}}
     {{- fromJsonc .chezmoi.stdin | jq $mergeJsonOperator | first | toPrettyJson -}}
 {{- else -}}
-    {{- $baseVSCodiumSettings -}}
+    {{- $baseVSCodeSettings -}}
 {{- end }}
