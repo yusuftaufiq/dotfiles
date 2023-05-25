@@ -236,7 +236,7 @@
   - `<Super>` - Open ArcMenu launcher
   - `<Super>` + `F2` - Shortcut for toggle 1st desktop mode
   - `<Super>` + `F3` - Shortcut for toggle 2nd desktop mode
-  - `<Super>` + `C` - Open VS **C**odium
+  - `<Super>` + `C` - Open VS **C**ode
   - `<Super>` + `E` - Open Nautilus file **e**xplorer
   - `<Super>` + `<Tab>` - Toggle application view
   - `<Shift>` + `<Super>` + `M` - **M**inimize window
