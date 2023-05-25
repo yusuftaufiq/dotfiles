@@ -56,17 +56,17 @@
 !.config/lsd/**
 !.config/neofetch/**
 
-{{- else if eq .env.applyMode "vscodium" -}}
+{{- else if eq .env.applyMode "vscode" -}}
 
 **
 !.config/
 
 # The following scripts, files, and folders will be applied and executed
-# when the .env.applyMode of .chezmoidata.toml is set to "vscodium".
+# when the .env.applyMode of .chezmoidata.toml is set to "vscode".
 
-!.chezmoiscripts/02-install-vscodium-with-extensions.sh
+!.chezmoiscripts/02-install-vscode-with-extensions.sh
 !.local/share/fonts/**
-!.config/VSCodium/**
+!.config/VSCode/**
 
 {{- else if eq .env.applyMode "all" -}}
 

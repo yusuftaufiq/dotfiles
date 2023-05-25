@@ -1,5 +1,5 @@
 [core]
-    editor = codium --wait
+    editor = code --wait
     pager = delta
 
 [interactive]
@@ -12,7 +12,7 @@
     features = nordic
     navigate = true
     hyperlinks = true
-    hyperlinks-file-link-format = "codium://file/{path}:{line}"
+    hyperlinks-file-link-format = "code://file/{path}:{line}"
 
 [merge]
     conflictstyle = diff3

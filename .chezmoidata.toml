@@ -4,4 +4,4 @@
     tertiary = "#bf616a" # aurora red
 
 [env]
-    applyMode = "all" # possible values are "all", "terminal", "appearance", or "vscodium"
+    applyMode = "all" # possible values are "all", "terminal", "appearance", or "vscode"

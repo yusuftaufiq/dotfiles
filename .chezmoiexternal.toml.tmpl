@@ -65,10 +65,10 @@
   refreshPeriod = "168h"
 {{- end }}
 
-{{ if or (eq .env.applyMode "appearance") (eq .env.applyMode "terminal") (eq .env.applyMode "vscodium") (eq .env.applyMode "all") -}}
+{{ if or (eq .env.applyMode "appearance") (eq .env.applyMode "terminal") (eq .env.applyMode "vscode") (eq .env.applyMode "all") -}}
 
 # The following folders will be applied when the .env.applyMode
-# of .chezmoidata.toml is set to "appearance", "vscodium", "terminal" or "all".
+# of .chezmoidata.toml is set to "appearance", "vscode", "terminal" or "all".
 
 [".local/share/fonts/caskaydia-cove"]
   type = "archive"

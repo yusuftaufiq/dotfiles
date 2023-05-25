@@ -156,7 +156,6 @@ typeset -g POWERLEVEL9K_OS_ICON_CONTENT_EXPANSION=$'\uf32a'
 typeset -g POWERLEVEL9K_INSTANT_PROMPT=off
 neofetch --off
 
-alias c='codium'
 alias ls='lsd'
 alias cat='bat'
 alias sail='[ -f sail ] && bash sail || bash vendor/bin/sail'

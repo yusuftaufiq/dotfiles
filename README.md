@@ -1,7 +1,7 @@
 <div align="center">
   <p><a href="https://github.com/yusuftaufiq/dotfiles"><img src="./assets/dotfiles-logo-icon.png" alt="Dotfiles Logo" height="60"/></a></p>
   <h1>~/.dotfiles</h1>
-  <p>My personal dotfiles collection for configuring GNOME, conky, git, zsh, tmux, VS Codium, and other stuff with Persona 5 x Nord Theme managed via chezmoi.</p>
+  <p>My personal dotfiles collection for configuring GNOME, conky, git, zsh, tmux, VS Code, and other stuff with Persona 5 x Nord Theme managed via chezmoi.</p>
   <p>
     <a href="https://wiki.gnome.org/">
       <img alt="Desktop environment" src="https://img.shields.io/static/v1?label=de&message=gnome&labelColor=2E3440&color=BF616A&style=flat">
@@ -42,7 +42,7 @@
 - Dotfiles management via chezmoi, configured to:
   - Running [scripts](./.chezmoiscripts/) pre and post-install.
   - Use dependencies from [external sources](./.chezmoiexternal.toml.tmpl) to keep the content synchronized with the latest updates.
-  - Templating to change file content depending on the environment. E.g.: [modify_settings.json](./dot_config/VSCodium/User/modify_settings.json) to combine the existing and new `settings.json`.
+  - Templating to change file content depending on the environment. E.g.: [modify_settings.json](./dot_config/VSCode/User/modify_settings.json) to combine the existing and new `settings.json`.
 - GNOME configurations for:
 
   - GNOME extensions
@@ -84,7 +84,7 @@
     - [neofetch](https://github.com/dylanaraps/neofetch) - system information tool
     - [delta](https://github.com/dandavison/delta) - syntax-highlighting pager for git, diff, and grep output
 
-  - Editor: [VS Codium](https://github.com/VSCodium/vscodium/)
+  - Editor: [VS Code](https://github.com/microsoft/vscode)
   - Desktop window:
     - [conky](https://github.com/brndnmtthws/conky) - desktop system monitor
     - [cava](https://github.com/karlstav/cava) - audio visualizer
@@ -158,7 +158,7 @@
   cd ~ && sh -c "$(wget -qO- get.chezmoi.io)" -- init yusuftaufiq
   ```
 
-- Modify `env.applyMode` inside [`.chezmoidata.toml`](./.chezmoidata.toml) to `terminal`, `appearance` or `vscodium`.
+- Modify `env.applyMode` inside [`.chezmoidata.toml`](./.chezmoidata.toml) to `terminal`, `appearance` or `vscode`.
 
   > :warning: To know which shell scripts will be executed and which files will be modified or replaced, you can look at [`.chezmoiignore`](./.chezmoiignore) and [`.chezmoiexternal.toml.tmpl`](./.chezmoiexternal.toml.tmpl)
 
@@ -243,7 +243,7 @@
   - `<Alt>` + `<Tab>` - Switch applications
   - `<Shift>` + `<Alt>` + `<Tab>` - Switch applications backward
 
-- VS Codium
+- VS Code
 
   - `<Ctrl>` + `<Shift>` + `↑` - Resize integrated terminal panel **up**
   - `<Ctrl>` + `<Shift>` + `↓` - Resize integrated terminal panel **down**
