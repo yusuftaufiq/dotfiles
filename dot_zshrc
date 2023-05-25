@@ -98,7 +98,6 @@ plugins=(
   fzf-tab
   forgit
   aliases
-  brew
   composer
   command-not-found
   common-aliases
@@ -107,9 +106,6 @@ plugins=(
   ubuntu
 )
 
-if type brew &>/dev/null; then
-  fpath+=$(brew --prefix)/share/zsh/site-functions
-fi
 fpath+=${ZSH_CUSTOM:-${ZSH:-~/.oh-my-zsh}/custom}/plugins/zsh-completions/src
 
 source $ZSH/oh-my-zsh.sh
@@ -171,7 +167,6 @@ export PATH=$PATH:~/go/bin
 export PATH=$PATH:~/.spicetify
 export PATH=$PATH:~/.npm-global/bin
 export PATH=$PATH:~/.config/composer/vendor/bin
-export PATH=$PATH:/home/linuxbrew/.linuxbrew/lib/ruby/gems/3.2.0/bin
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
